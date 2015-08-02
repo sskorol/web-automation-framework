@@ -16,7 +16,7 @@ public interface ElementsSupplier {
 
     default <T> void initElements(final T targetPage) {
         final Stream<Class> pageChain = Stream.iterate(targetPage.getClass(), Class::getSuperclass);
-        takeWhile(pageChain, pageObject -> pageObject != Object.class)
+        takeWhile(pageChain, pageObject -> !pageObject.equals(Object.class))
                 .flatMap(pageObject -> Stream.of(pageObject.getDeclaredFields()))
                 .forEach(field -> getSupportedAnnotationTypes()
                         .filter(field::isAnnotationPresent)

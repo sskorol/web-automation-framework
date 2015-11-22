@@ -7,7 +7,7 @@ You can find detailed instruction in the following articles:
  - http://qa-automation-notes.blogspot.com/2015/07/java-8-impact-on-test-automation.html
  - http://qa-automation-notes.blogspot.com/2015/08/java-8-impact-on-test-automation.html
 
-Author: Serhii Kuts (sergey.s.kuts@gmail.com)
+Author: Serhii (Kuts) Korol (serhii.s.korol@gmail.com)
 
 Prettified test case:
 ```java
